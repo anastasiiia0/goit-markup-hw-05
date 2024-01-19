@@ -583,7 +583,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="close-btn-icon" width="8" height="8">
@@ -633,22 +633,29 @@
               class="form-input text-area"
             ></textarea>
           </div>
-
-          <div class="form-field">
-            <input
-              type="checkbox"
-              name="conditions"
-              id="email"
-              value="accept"
-              class="form-checkbox"
-            />
-            <label for="conditions" class="form-label"
-              >I accept the terms and conditions of the
-              <span class="blue-text">Privacy Policy</span></label
-            >
-          </div>
-          <button type="submit" class="button">Send</button>
         </form>
+
+        <div class="checkbox-field">
+          <input
+            type="checkbox"
+            name="policy"
+            id="policy"
+            value="accept"
+            class="form-input visually-hidden"
+          />
+          <label for="policy" class="form-label">
+            <span>
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="https://en.wikipedia.org/wiki/Privacy_policy"
+              >Privacy Policy
+            </a>
+          </label>
+        </div>
+        <button type="submit" class="button">Send</button>
       </div>
     </div>
   </body>
