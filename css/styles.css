@@ -555,7 +555,7 @@ input {
 }
 
 .modal-title {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   color: #2e2f42;
   text-align: center;
   font-size: 16px;
@@ -568,9 +568,9 @@ input {
   margin-bottom: 8px;
 }
 
-.form-field.last-field {
+/* .form-field.last-field {
   margin-bottom: 16px;
-}
+} */
 
 .form-label {
   display: block;
@@ -663,6 +663,10 @@ input {
   margin-bottom: 24px;
 }
 
+.footer-modal {
+  margin-left: 80px;
+}
+
 .footer-modal-form {
   display: flex;
   gap: 24px;
@@ -697,12 +701,15 @@ input {
 
 .button.subscribe-button {
   display: flex;
-  width: 165px;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
-  gap: 16px;
 }
 
 .subscribe-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
+
